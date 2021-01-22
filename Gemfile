@@ -42,6 +42,12 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'geordi'
   gem 'highline'
+
+  gem 'capistrano', require: false
+  gem 'capistrano-opscomplete', require: false
+  gem 'capistrano-passenger', require: false
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
 end
 
 group :test do
