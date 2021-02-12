@@ -10,6 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_02_12_220117) do
+
+  create_table "projects", force: :cascade do |t|
+    t.string "name"
+    t.string "goal"
+    t.string "addressees"
+    t.string "location"
+    t.integer "amount_of_inhabitants"
+    t.string "location_description"
+    t.string "status_of_project"
+    t.integer "donations_needed"
+    t.integer "donations_received"
+    t.string "donation_code"
+  end
 
 end
