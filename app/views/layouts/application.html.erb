@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Schulen für Ghana</title>
+    <title><%= 'STAGING ' if Rails.env.staging? %><%= 'DEVELOPMENT ' if Rails.env.development? %>Bildung für Ghana</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
