@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>
-      <% title = @title.present? ? @title : '' %>
-      <% title = "#{title} | Bildung für Ghana" %>
+      <% title = @title.present? ? "#{@title} | " : '' %>
+      <% title = "#{title}Bildung für Ghana" %>
       <% title = "STAGING #{title}" if Rails.env.staging? %>
       <% title = "DEVELOPMENT #{title}" if Rails.env.development? %>
       <%= title %>
