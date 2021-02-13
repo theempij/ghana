@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= 'STAGING ' if Rails.env.staging? %><%= 'DEVELOPMENT ' if Rails.env.development? %>Bildung für Ghana</title>
+    <title>
+      <% title = @title.present? ? @title : '' %>
+      <% title = "#{title} | Bildung für Ghana" %>
+      <% title = "STAGING #{title}" if Rails.env.staging? %>
+      <% title = "DEVELOPMENT #{title}" if Rails.env.development? %>
+      <%= title %>
+    </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
