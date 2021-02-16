@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root to: 'application#landing_page'
 
+  get :error, to: 'application#'
+
   get 'imprint', to: 'application#'
   get 'donate_now', to: 'application#'
   get 'news', to: 'application#'
