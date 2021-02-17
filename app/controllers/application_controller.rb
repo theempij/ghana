@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
   def about_me
 
   end
-  
+
   def error
     raise "hell"
   end
