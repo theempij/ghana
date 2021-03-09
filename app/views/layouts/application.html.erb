@@ -3,7 +3,7 @@
   <head>
     <title>
       <% title = @title.present? ? "#{@title} | " : '' %>
-      <% title = "#{title}Bildung für Ghana" %>
+      <% title = "#{title}Education for Ghana" %>
       <% title = "STAGING #{title}" if Rails.env.staging? %>
       <% title = "DEVELOPMENT #{title}" if Rails.env.development? %>
       <%= title %>
@@ -17,6 +17,8 @@
   </head>
 
   <body>
+    <h1><%= link_to "Education for Ghana", root_path%></h1>
+    <%= image_tag 'flag.png', size: '214x160'%>
     <%= yield %>
   </body>
 </html>
