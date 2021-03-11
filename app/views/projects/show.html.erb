@@ -1,5 +1,14 @@
 <h2>Project: <%= @project.name %></h2>
 <p>(Back to <%= link_to 'all projects', projects_path %>)</p>
+<p>Location:</p>
+<% gmaps_api_key="AIzaSyCMCYie1dzlsM4T6BFrBUft69pvgWaprBI" %>
+<%
+  zoom_level_ghana = 6
+  zoom_level_city = 14
+  zoom_level = @project.location == "Ghana" ? zoom_level_ghana : zoom_level_city
+%>
+<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center='#{@project.location}'&size=300x300&zoom=#{zoom_level}&key=#{gmaps_api_key}" %>
+<br><br>
 <table border="1px">
   <tr>
     <td>Goal</td>
@@ -12,7 +21,6 @@
   <tr>
     <td>Location</td>
     <td><%= @project.location %></td>
-    <%# MAP %>
   </tr>
   <tr>
     <td>Inhabitants</td>
