@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'sentry-raven'
 gem 'sentry-ruby'
 gem 'sentry-rails'
+gem 'bootstrap-sass'
 
 
 # Reduces boot times through caching; required in config/boot.rb

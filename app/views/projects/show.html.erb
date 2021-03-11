@@ -1,4 +1,5 @@
 <h2>Project: <%= @project.name %></h2>
+<p>(Back to <%= link_to 'all projects', projects_path %>)</p>
 <table border="1px">
   <tr>
     <td>Goal</td>
@@ -26,12 +27,12 @@
     <td><%= @project.status_of_project %></td>
   </tr>
   <tr>
-    <td>Donations needed (if 0 then ongoing project))</td>
-    <td><%= @project.donations_needed %></td>
+    <td>Donations needed for project or initiative (if 0 then ongoing project))</td>
+    <td><%= @project.donations_needed %> €</td>
   </tr>
   <tr>
     <td>Donations received</td>
-    <td><%= @project.donations_received %></td>
+    <td><%= @project.donations_received %> €</td>
   </tr>
   <tr>
     <td>Donation bank transfer code (Verwendungszweck)</td>

@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fec9ac3-a195-4e8e-bbd1-d0b667589382" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/projects/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/application/about_ghana.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/application/about_ghana.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/application/donate_now.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/application/donate_now.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/application/landing_page.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/application/landing_page.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/application/news.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/application/news.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/projects/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/projects/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +168,7 @@
       <workItem from="1612501914351" duration="3252000" />
       <workItem from="1612970193611" duration="13218000" />
       <workItem from="1614324822802" duration="2000" />
-      <workItem from="1614533496897" duration="3698000" />
+      <workItem from="1614533496897" duration="5730000" />
     </task>
     <servers />
   </component>
