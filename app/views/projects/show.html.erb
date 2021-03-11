@@ -4,7 +4,7 @@
 <% gmaps_api_key="AIzaSyCMCYie1dzlsM4T6BFrBUft69pvgWaprBI" %>
 <%
   zoom_level_ghana = 6
-  zoom_level_city = 14
+  zoom_level_city = 12
   zoom_level = @project.location == "Ghana" ? zoom_level_ghana : zoom_level_city
 %>
 <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center='#{@project.location}'&size=300x300&zoom=#{zoom_level}&key=#{gmaps_api_key}" %>
