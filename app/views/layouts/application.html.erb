@@ -11,7 +11,7 @@
       gtag('config', 'G-R37QFLK873');
     </script>
     <title>
-      <% title = @title.present? ? "#{@title} | " : '' %>
+      <% title = @title.present? ? "#{@title} - " : '' %>
       <% title = "#{title}Education for Ghana" %>
       <% title = "STAGING #{title}" if Rails.env.staging? %>
       <% title = "DEVELOPMENT #{title}" if Rails.env.development? %>
