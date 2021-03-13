@@ -1,7 +1,7 @@
 <h2>Project: <%= @project.name %></h2>
 <p>(Back to <%= link_to 'all projects', projects_path %>)</p>
 <p>Location:</p>
-<% gmaps_api_key="AIzaSyCMCYie1dzlsM4T6BFrBUft69pvgWaprBI" %>
+<% gmaps_api_key=Rails.application.credentials.dig(:google_maps_api) %>
 <%
   zoom_level_ghana = 6
   zoom_level_city = 12
