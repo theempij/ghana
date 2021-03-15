@@ -18,7 +18,7 @@ set :linked_dirs, %w(log public/system tmp/pids storage)
 set :keep_releases, 10
 
 set :ssh_options, {
-    forward_agent: true
+  forward_agent: true
 }
 
 # Install new Ruby version if not already installed

@@ -1,6 +1,3 @@
-# Include opscomplete tasks
-require 'capistrano/opscomplete'
-
 # Load DSL and set up stages
 require "capistrano/setup"
 
@@ -36,14 +33,17 @@ install_plugin Capistrano::SCM::Git
 require 'capistrano/bundler'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
+# Include opscomplete tasks
+require 'capistrano/opscomplete'
 require 'capistrano/passenger'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
-Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
+Dir.glob('lib/capistrano/tasks/*.rake').each do |r|
+  # `import r` calls Rake.application.add_import(r), which imports the file only
+  # *after* this file has been processed, so the imported tasks would not be
+  # available to the hooks below.
+  Rake.load_rakefile(r)
+end
 
 # Install new Ruby version if not already installed
 after 'deploy:updating', 'opscomplete:ruby:ensure'
-
-# Include passenger tasks
-# This automatically sets up deploy:restart to run after :publishing is complete
-require 'capistrano/passenger'
