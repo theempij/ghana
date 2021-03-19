@@ -1,0 +1,444 @@
+html,
+body {
+  height: 100%;
+}
+body {/*
+  color: #fff;*/
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  margin: 0;
+  padding: 0;
+}
+a:hover
+{
+	text-decoration: none;
+}
+/*Navigation Bar*/
+.nav{
+ margin: 0 auto;
+ border-bottom: 2px solid orange;
+}
+nav{
+ height: 65px;
+ width: 100%;
+ background: #fff;
+ box-shadow: 0 10px 15px rgba(0,0,0,.1);
+}
+.logo{
+ padding: 5px 0 0 5px;
+ width: 200px;
+ height: auto;
+}
+nav ul{
+ padding: 0;
+ margin: 0;
+ float: right;
+ margin-right: 10px;
+}
+nav ul li{
+ background-color: #fff;
+ color: black;
+ position: relative;
+ list-style: none;
+ display: inline-block;
+ z-index: 1000;
+}
+nav ul li a{
+ padding: 0 15px;
+ color: black;
+ text-decoration: none;
+ line-height: 60px;
+ font-size: 18px;
+ font-family: 'Roboto', sans-serif;   
+ transition: .5s;
+}
+nav ul li a:hover
+{
+	color: #27ae60;
+}
+/*Navigation Bar*/
+
+/*HEADINGS & SUB-HEADINGS*/
+.headings
+{
+	margin-left: 5%;
+	font-size: 30px;
+	font-family: 'Roboto',sans-serif;
+
+}
+.subheadings
+{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 25px;
+	font-family: 'Roboto',sans-serif;
+}
+/*HEADINGS & SUB-HEADINGS*/
+
+/*PROJECT SECTION*/
+.projects
+{
+	font-size: 18px;
+	margin-left: 5%;
+	margin-top: 20px;
+	font-family: 'Barlow';
+}
+.projects a
+{
+	color: #27ae60;
+}
+.projects a:hover
+{
+	color: red;
+}
+/*PROJECT SECTION*/
+
+
+.para
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 16px;
+	font-family: 'Poppins',sans-serif;
+}
+
+
+/*DONATION SECTION*/
+.donation
+{
+	margin-top: 50px;
+}
+.donation table,th,td,tr
+{
+	border: solid 1px;
+	border-style: double;
+	text-align:center;
+	font-family: 'Roboto',sans-serif;
+}
+.donation table
+{
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+	margin-right: 25%;
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+.donation th
+{
+	padding: 10px 0px 10px 30px;
+}
+.donation td
+{
+	padding: 10px 20px 10px 20px;	
+}
+#sh1
+{
+	margin-left: 5%;
+	font-size: 20px;
+}
+.donation h1
+{
+	text-align: center;
+}
+/*DONATION SECTION*/
+
+
+/*HEADER SECTION*/
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 40%;
+  background-color: #d63031;
+  text-align: center;
+  /*height: 100%; */
+  /*min-height: 100%;*/
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.inner
+{
+	margin-top: 100px;
+}
+.inner h1
+{
+	font-size: 45px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-family: 'Roboto',sans-serif;
+}
+.inner p
+{
+	letter-spacing: 2px;
+	font-family: 'Roboto',sans-serif;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* DONATE NOW BUTTON */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #f1c40f;
+  border: 1px solid #f1c40f;
+}
+.btn-default:hover
+{
+  background: #27ae60;
+  border: 1px solid #27ae60;
+  color: #fff;
+  transition: .5s;
+}
+/* DONATE NOW BUTTON */
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+/* Padding for spacing */
+/*HEADER SECTION*/
+
+/*NEWS SECTION*/
+.news
+{
+	margin-top: 15px;
+	font-size: 16px;
+	margin: 0;
+	padding: 5px 0px;
+	background: yellow;
+	font-family: 'Roboto',sans-serif;
+}
+/*.....................Digital Cards CSS...............*/
+.box-area
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/*background: #262626;*/
+	width: 100%;
+}
+.single-box
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: auto;
+	border-radius: 4px;
+	background-color: #fff;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	transition: .3s;
+	box-shadow: 5px 5px 15px rgba(0,0,0,.9);
+}
+.img-area
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	border:6px solid #ddd;
+	border-radius: 50%;
+	margin-bottom: 10px;padding: 20px;
+	-webkit-background-size : cover;
+	background-size: cover;
+	background-position: center center;
+}
+.single-box:nth-child(1) .img-area  
+{
+	background-image: url(facility.jpg);
+}
+.single-box:nth-child(2) .img-area
+{
+	background-image: url(quality.jpg);
+}
+.single-box:nth-child(3) .img-area
+{
+	background-image: url(hec.jpg);
+}
+.header-text
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 49px;
+}
+.img-text p
+{
+	font-family: 'Poppins',sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.img-text button
+{
+	width: 200px;
+	height: 35px;
+	border: none;
+	background: #d63031; 
+}
+.img-text a
+{
+	text-decoration: none;
+	font-family: 'Barlow',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+	color: #fff;
+}
+.img-text button:hover
+{
+	background: #d63031;
+	transition: .3s ease;
+}
+.single-box:hover
+{
+	background: #27ae60;
+	color: #fff;
+}
+/*.....................Digital Cards CSS...............*/
+
+/*NEWS SECTION*/
+
+
+/*PROJECT BOXES CSS*/
+.contain
+{
+	position: relative;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: minmax(100px, auto);
+	margin: 40px;
+	grid-auto-flow: dense;
+	grid-gap: 20px;
+}
+.contain .box
+{
+	background: #c0392b;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	padding: 20px;
+	display: grid;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	transition: .5s;
+	font-family: 'Barlow',sans-serif;
+}
+.contain a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.contain .box i
+{
+	position: relative;
+	max-width: 100px;
+	margin-bottom: 10px;
+	font-size: 70px;
+	color: #fff;
+}
+
+.contain .box:nth-child(n):hover 
+{
+	/*grid-column: span 2;*/
+	background: #27ae60;
+	transform: scale(1.2);
+}
+.contain a:hover
+{
+	color: #fff;
+	text-decoration: none;
+}
+/*PROJECT BOXES CSS*/
+
+
+/*Footer*/
+footer
+{
+	background: #d63031;
+	height: auto;
+	width: 100%;
+	margin-top: 50px;
+	padding-top: 40px;
+	color: #fff;
+}
+.footer-content
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content p
+{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+.socials
+{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+.socials li
+{
+	margin: 0 10px;
+}
+.socials a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.socials a i
+{
+	font-size: 20px;
+	color: #fff;
+}
+.footer-bottom
+{
+	background: #000;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer-bottom p
+{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+/*Footer*/
+
+
+/*Image SiteMap*/
+#img2
+{
+	margin-left: 40%;
+}
+
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 760px) {
+  nav ul li a
+  {
+  	font-size: 14px;
+  	padding: 0 5px;
+  }
+}
+/*MEDIA QUERY*/

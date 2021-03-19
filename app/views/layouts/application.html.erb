@@ -21,16 +21,62 @@
     <meta content="Donatioms, Ghana, Projects" name="keywords">
     <meta content="I foster development in Ghana with fovcus on education" name="description">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <h1><%= link_to "Education for Ghana", root_path%></h1>
-    <%= image_tag 'flag.png', size: '214x160'%>
+  <body data-new-gr-c-s-check-loaded="14.998.0" data-gr-ext-installed="">
+    <!-- Navbar -->
+    <div class="nav">
+      <nav>
+        <%= link_to image_tag('logo.png', size: '214x160'), root_path %>
+        <ul>
+          <li><%= link_to 'News', news_path %></li>
+          <li><%= link_to 'Projects', projects_path %></li>
+          <li><%= link_to 'About Ghana', about_ghana_path %> </li>
+          <li><%= link_to 'Help by donating NOW', donate_now_path %></li>
+        </ul>
+      </nav>
+    </div>
+    <br><br><br><br><br>
+    <!-- Navbar -->
     <%= yield %>
+    <!-- Bootstrap, CSS & Fonts Link -->
+    <p>
+      <link rel="stylesheet" href="css/bootstrapmin.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    </p>
+
+    <footer>
+      <div class="footer-content">
+        <h3>
+          <u>Education For Ghana</u>
+        </h3>
+        <p>
+          I personally ensure your donations are applied in Ghana to help the people!
+        </p>
+        <ul class="socials">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Copyright &copy; 2021 EducationForGhana | Private Page: Akassi Marie Laure Ahizi |
+          schulenfuerghana@gmail.com | <a href="https://www.better-place-ghana.com/imprint">Imprint</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
+
+
+

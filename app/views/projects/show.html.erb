@@ -1,48 +1,56 @@
-<h2>Project: <%= @project.name %></h2>
-<p>(Back to <%= link_to 'all projects', projects_path %>)</p>
-<p>Location:</p>
+<h1 class="headings"><%= @project.name %></h1>
+<h2 id="sh1"><u>Location:</u></h2>
 <%
   zoom_level_ghana = 6
   zoom_level_city = 12
   zoom_level = @project.location == "Ghana" ? zoom_level_ghana : zoom_level_city
 %>
-<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center='#{@project.location}'&size=300x300&zoom=#{zoom_level}&key=AIzaSyCMCYie1dzlsM4T6BFrBUft69pvgWaprBI}" %>
+<%#= image_tag "https://maps.googleapis.com/maps/api/staticmap?center='#{@project.location}'&size=300x300&zoom=#{zoom_level}&key=AIzaSyCMCYie1dzlsM4T6BFrBUft69pvgWaprBI}" %>
+<%= image_tag "map.jpg", {id: 'img2'}%>
 <br><br>
-<table border="1px">
-  <tr>
-    <td>Goal</td>
-    <td><%= @project.goal %></td>
-  </tr>
-  <tr>
-    <td>Addressees</td>
-    <td><%= @project.addressees %></td>
-  </tr>
-  <tr>
-    <td>Location</td>
-    <td><%= @project.location %></td>
-  </tr>
-  <tr>
-    <td>Inhabitants</td>
-    <td><%= @project.amount_of_inhabitants %></td>
-  </tr>
-  <tr>
-    <td>Description of Location</td>
-    <td><%= @project.location_description %></td>
-  </tr>
-  <tr>
-    <td>Status of Project</td>
-    <td><%= @project.status_of_project %></td>
-  </tr>
-  <tr>
-    <td>Donations needed for project or initiative (if 0 then ongoing project))</td>
-    <td><%= @project.donations_needed %> €</td>
-  </tr>
-  <tr>
-    <td>Donations received</td>
-    <td><%= @project.donations_received %> €</td>
-  </tr>
-  <tr>
-    <td>Donation bank transfer code (Verwendungszweck)</td>
-    <td><%= @project.donation_code %></td>
-  </tr>
-</table>
+
+<%#
+<h2 id="sh1"><u>Description:</u></h2>
+<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br>Given below is a table of information about this project.</p>
+%>
+<div class="donation">
+  <h1><u>Information on 'Nana on Tour'</u></h1>
+  <table>
+    <tr>
+      <th>Goal</th>
+      <td><%= @project.goal %></td>
+    </tr>
+    <tr>
+      <th>Addresses</th>
+      <td><%= @project.addressees %></td>
+    </tr>
+    <tr>
+      <th>Location</th>
+      <td><%= @project.location %></td>
+    </tr>
+    <tr>
+      <th>Inhibitants</th>
+      <td><%= @project.amount_of_inhabitants %></td>
+    </tr>
+    <tr>
+      <th>Description of Location</th>
+      <td><%= @project.location_description %></td>
+    </tr>
+    <tr>
+      <th>Status of Project or Iniative</th>
+      <td><%= @project.status_of_project %></td>
+    </tr>
+    <tr>
+      <th>Donations needed</th>
+      <td><%= @project.donations_needed %> €</td>
+    </tr>
+    <tr>
+      <th>Donations Recieved</th>
+      <td><%= @project.donations_received %> €</td>
+    </tr>
+    <tr>
+      <th>Donation bank transfer code (Verwendungszweck)</th>
+      <td><%= @project.donation_code %></td>
+    </tr>
+  </table>
+</div>
