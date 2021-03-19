@@ -175,6 +175,7 @@ nav ul li a:hover
 	letter-spacing: 2px;
 	font-family: 'Roboto',sans-serif;
     color: #ffffff;
+    font-weight: bold;
 }
 .cover-container {
   margin-right: auto;
