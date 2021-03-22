@@ -22,8 +22,4 @@ class ApplicationController < ActionController::Base
   def about_me
     @title = "About me"
   end
-
-  def error
-    raise "hell"
-  end
 end
