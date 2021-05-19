@@ -4,6 +4,7 @@
     <list default="true" id="9fec9ac3-a195-4e8e-bbd1-d0b667589382" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/ghana.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ghana.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +177,8 @@
       <workItem from="1617722552492" duration="622000" />
       <workItem from="1618039747288" duration="599000" />
       <workItem from="1618577532414" duration="599000" />
+      <workItem from="1618732830231" duration="2478000" />
+      <workItem from="1620566566606" duration="2438000" />
     </task>
     <servers />
   </component>
